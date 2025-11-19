@@ -1,0 +1,208 @@
+/* Root variables for easy color adjustments */
+:root {
+  --primary-color: #1e90ff;
+  --primary-hover: #1c86ee;
+  --text-color: #333;
+  --text-muted: #666;
+  --bg-color: #fff;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bee-shopping--header {
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  padding: 15px 30px;
+  /* font-family: var(--font-family); */
+  user-select: none;
+}
+
+.bee-shopping-logo {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--primary-color);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  cursor: default;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(30, 144, 255, 0.5);
+  user-select: none;
+  /* Optional subtle gradient */
+  background: linear-gradient(90deg, #071f37, #63b3ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.bee-shopping-logo:hover {
+  color: #1c86ee;
+  text-shadow: 2px 2px 5px rgba(28, 134, 238, 0.7);
+  cursor: pointer;
+}
+
+
+.bee-shopping--header--nav {
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+}
+
+.bee-shopping--top--bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.bee-shopping--top--bar a {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.25s ease-in-out;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.bee-shopping--top--bar a:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.bee-shopping--bottom--bar {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bee-shopping-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.bee-shopping-menu a {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.bee-shopping-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2.5px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.bee-shopping-menu a:hover {
+  color: var(--primary-color);
+}
+
+.bee-shopping-menu a:hover::after {
+  width: 100%;
+}
+
+.bee-shopping--search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  flex-grow: 1;
+  max-width: 300px;
+  justify-content: flex-end;
+}
+
+.bee-shopping-search-box {
+  width: 100%;
+  padding: 8px 15px;
+  border: 2px solid var(--border-color);
+  border-right: none;
+  border-radius: 25px 0 0 25px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.bee-shopping-search-box:focus {
+  border-color: var(--primary-color);
+}
+
+.bee-shopping--search--btn {
+  background-color: #31abf7;         /* bright accent color */
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: white;                     /* icon color */
+  font-size: 18px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 34, 255, 0.4);
+}
+
+.bee-shopping--search--btn:hover {
+  background-color: #0d3a7e;      /* darker blue on hover */
+  box-shadow: 0 4px 10px rgba(13, 58, 126, 0.7);
+  color: black;                   /* icon color changes to black */
+}
+
+.bee-shopping--search--btn:active {
+  background-color: #0a2a5a;      /* even darker blue on active press */
+  box-shadow: none;
+  transform: scale(0.95);
+  color: black;                   /* keep icon black */
+}
+
+.bee-shopping--search--btn i {
+  pointer-events: none;           /* icon ignores mouse events */
+  display: block;
+  transition: color 0.3s ease;
+}
+
+
+
+
+
+.bee-shopping--search--btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.bee-shopping--search--btn i {
+  pointer-events: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .bee-shopping--top--bar {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .bee-shopping--bottom--bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bee-shopping-menu {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .bee-shopping--search-bar {
+    max-width: 100%;
+  }
+}
