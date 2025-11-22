@@ -1,0 +1,9 @@
+.bee-shopping--top--bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+}
