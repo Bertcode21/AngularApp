@@ -7,3 +7,15 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+.bee-shopping--top--bar a {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.25s ease-in-out;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.bee-shopping--top--bar a:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}

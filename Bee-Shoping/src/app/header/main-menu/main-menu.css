@@ -1,0 +1,34 @@
+
+.bee-shopping-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.bee-shopping-menu a {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.bee-shopping-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2.5px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.bee-shopping-menu a:hover {
+  color: var(--primary-color);
+}
+
+.bee-shopping-menu a:hover::after {
+  width: 100%;
+}

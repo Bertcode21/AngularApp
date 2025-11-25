@@ -14,3 +14,34 @@
 html,body{
     font-family: "Montserrat", sans-serif;
 }
+:root {
+  --primary-color: #1e90ff;
+  --primary-hover: #1c86ee;
+  --text-color: #333;
+  --text-muted: #666;
+  --bg-color: #fff;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .bee-shopping--top--bar {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .bee-shopping--bottom--bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bee-shopping-menu {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .bee-shopping--search-bar {
+    max-width: 100%;
+  }
+}
