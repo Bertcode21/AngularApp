@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { TopHeader } from './top-header/top-header';
+import { ProductLists } from './product-lists/product-lists';
 
 
 @Component({
@@ -9,7 +10,8 @@ import { TopHeader } from './top-header/top-header';
   imports: [
     RouterOutlet, 
     HeaderComponent,
-    TopHeader
+    TopHeader,
+   ProductLists
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
