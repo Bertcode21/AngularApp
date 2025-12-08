@@ -9,12 +9,14 @@ import { Component } from '@angular/core';
 export class ProductLists {
   products = { 
 name: "Iphone 13 pro max",
-price : 999,
+price : 345,
 color : "Matte Black",
-discountedPrice: 899,
+discount: 8.9,
 Description:  "The iPhone 13 Pro Max features a sleek design, advanced camera system, and powerful performance, making it a top choice for smartphone enthusiasts."
 
   };
-
+getDiscountedPrice() {
+return this.products.price - (this.products.price * this.products.discount / 100);
+}
 
 }
