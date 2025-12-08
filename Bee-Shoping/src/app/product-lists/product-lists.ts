@@ -11,7 +11,7 @@ export class ProductLists {
 name: "Iphone 13 pro max",
 price : 345,
 color : "Matte Blue",
-instock: true,
+instock: 15,
 discount: 8.9,
 pImage: "/images/iphone-13.png",
 Description:  "The iPhone 13 Pro Max features a sleek design, advanced camera system, and powerful performance, making it a top choice for smartphone enthusiasts."
