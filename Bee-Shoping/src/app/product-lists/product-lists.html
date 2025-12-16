@@ -7,3 +7,5 @@
 <p>Products Instock: {{products.instock > 0 ? 'Only' + products.instock + 'left in stock' : 'Out of stock'}}</p>
 <p>Description: {{products.Description }}</p>
 <button [disabled]="!(products.instock > 0)">Buy Now</button>
+<input [value]="name" (input)="onNameChange($event)">  <br>
+<p>name: {{name}}</p>

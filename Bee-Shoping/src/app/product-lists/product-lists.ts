@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './product-lists.css',
 })
 export class ProductLists {
+  name = "John Doe"
   products = { 
 name: "Iphone 13 pro max",
 price : 345,
@@ -19,6 +20,9 @@ Description:  "The iPhone 13 Pro Max features a sleek design, advanced camera sy
   };
 getDiscountedPrice() {
 return this.products.price - (this.products.price * this.products.discount / 100);
+}
+onNameChange(event: any){
+  console.log(event)
 }
 
 }
